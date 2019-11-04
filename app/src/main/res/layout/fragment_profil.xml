@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef3fd"
+    tools:context=".Fragments.Profil">
+
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/date"
+        app:layout_constraintBottom_toTopOf="@+id/nom"
+        app:layout_constraintStart_toStartOf="@+id/nom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="351dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:text="Login: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="@+id/mail"
+        app:layout_constraintStart_toStartOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:text="Name: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/prenom"
+        app:layout_constraintEnd_toEndOf="@+id/prenom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/prenom"
+        app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mathp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+    <TextView
+        android:id="@+id/frenchp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="45dp"
+        android:text="Score French: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/englishp"
+        app:layout_constraintEnd_toStartOf="@+id/alp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathp" />
+
+    <TextView
+        android:id="@+id/qip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:text="Score Qi: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mathp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mathp"
+        app:layout_constraintTop_toTopOf="@+id/mathp" />
+
+    <TextView
+        android:id="@+id/alp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:text="Score Alphabet: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frenchp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frenchp"
+        app:layout_constraintTop_toTopOf="@+id/frenchp" />
+
+    <TextView
+        android:id="@+id/audiop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:text="Score Audio: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/englishp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/englishp"
+        app:layout_constraintTop_toTopOf="@+id/englishp" />
+
+    <TextView
+        android:id="@+id/englishp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="45dp"
+        android:text="Score English: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/audiop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frenchp" />
+
+    <TextView
+        android:id="@+id/mathp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="45dp"
+        android:text="Score Math: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frenchp"
+        app:layout_constraintEnd_toStartOf="@+id/qip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+</android.support.constraint.ConstraintLayout>
